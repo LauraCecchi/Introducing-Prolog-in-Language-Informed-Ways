@@ -1,4 +1,4 @@
- Sample Output of a Grammar that Creates Knowledge Bases of Facts and Rules 
+Sample Output of a Grammar that Creates Knowledge Bases of Facts and Rules 
 
 N.B. In this work we used less syntactic sugar than proposed in this paper, but it can of course be added.
 
@@ -15,13 +15,14 @@ Sample Tests:
 -----------------------
 ?- update([the,mother,of,anne,likes,cats,that,purr]).
 
-I am adding the clause: likes(_x3136,_x3203):-                 mother_of(_x3136,anne),cat(_x3203),purrs(_x3203)
+I am adding the clause: likes(_x3136,_x3203):- 
+                        mother_of(_x3136,anne),cat(_x3203),purrs(_x3203)
 yes
 ----------------
  ?- update([canadian,citizens,can,apply,to,old,age,pensions]).
 
 I am adding the clause: can_apply_to(_x3220,_x3262):- 
-(citizen(_x3220),canadian(_x3220)),pension(_x3262),old_age(_x3262)
+                        (citizen(_x3220),canadian(_x3220)),pension(_x3262),old_age(_x3262)
 yes
  -----------------------
 ?- update([eve,and,adam,like,paradise]).
